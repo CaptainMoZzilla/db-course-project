@@ -13,6 +13,8 @@ from config import HOST_NAME, DATABASE, \
     USER_NAME, PASSWORD, \
     IS_COLD_START
 
+pd.set_option('display.max_columns', 500)
+
 
 def clear():
     system('cls') if name == 'nt' else system('clear')
